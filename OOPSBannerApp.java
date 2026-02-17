@@ -1,18 +1,26 @@
 /**
- * OOPSBannerApp UC3 – Banner using String.join()
+ * OOPSBannerApp UC4 – Banner using Array and Loop
  * @author Chakradhar
- * @version 3.0
+ * @version 4.0
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(String.join(" ", " *** ", " *** ", " ***** ", " ***** "));
-        System.out.println(String.join(" ", "*   *", "*   *", "*    *", "*     "));
-        System.out.println(String.join(" ", "*   *", "*   *", "***** ", "****  "));
-        System.out.println(String.join(" ", "*   *", "*   *", "*     ", "*   * "));
-        System.out.println(String.join(" ", " *** ", " *** ", "*     ", "***** "));
+        // Create String array to store banner lines
+        String[] lines = new String[5];
 
+        // Populate array using String.join()
+        lines[0] = String.join(" ", " *** ", " *** ", " ***** ", " ***** ");
+        lines[1] = String.join(" ", "*   *", "*   *", "*    *", "*     ");
+        lines[2] = String.join(" ", "*   *", "*   *", "***** ", "****  ");
+        lines[3] = String.join(" ", "*   *", "*   *", "*     ", "*   * ");
+        lines[4] = String.join(" ", " *** ", " *** ", "*     ", "***** ");
+
+        // Print using loop
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
