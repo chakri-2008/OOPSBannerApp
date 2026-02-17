@@ -1,19 +1,18 @@
 /**
- * OOPSBannerApp UC2 – Banner Display Application
- *
- * Displays OOPS as a banner using asterisks and spaces
+ * OOPSBannerApp UC3 – Banner using String.join()
  * @author Chakradhar
- * @version 2.0
+ * @version 3.0
  */
 
 public class OOPSBannerApp {
+
     public static void main(String[] args) {
 
-        System.out.println(" ***     ***    *****   ***** ");
-        System.out.println("*   *   *   *   *    *  *     ");
-        System.out.println("*   *   *   *   *****   ****  ");
-        System.out.println("*   *   *   *   *           * ");
-        System.out.println(" ***     ***    *      ***** ");
+        System.out.println(String.join(" ", " *** ", " *** ", " ***** ", " ***** "));
+        System.out.println(String.join(" ", "*   *", "*   *", "*    *", "*     "));
+        System.out.println(String.join(" ", "*   *", "*   *", "***** ", "****  "));
+        System.out.println(String.join(" ", "*   *", "*   *", "*     ", "*   * "));
+        System.out.println(String.join(" ", " *** ", " *** ", "*     ", "***** "));
 
     }
 }
