@@ -10,10 +10,10 @@ public class OOPSBannerApp {
 
         // Declare and initialize array in one step
         String[] lines = {
-            String.join(" ", " *** ", " *** ", " ***** ", " ***** "),
+            String.join(" ", " *** ", " *** ", " ***** ","***** "),
             String.join(" ", "*   *", "*   *", "*    *", "*     "),
-            String.join(" ", "*   *", "*   *", "***** ", "****  "),
-            String.join(" ", "*   *", "*   *", "*     ", "*   * "),
+            String.join(" ", "*   *", "*   *", "***** ", "***** "),
+            String.join(" ", "*   *", "*   *", "*     ", "    * "),
             String.join(" ", " *** ", " *** ", "*     ", "***** ")
         };
 
